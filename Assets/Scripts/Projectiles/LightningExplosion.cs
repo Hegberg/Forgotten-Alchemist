@@ -16,6 +16,11 @@ public class LightningExplosion : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        //CheckTimeToFade();
+    }
+
+    void FixedUpdate()
+    {
         CheckTimeToFade();
     }
 

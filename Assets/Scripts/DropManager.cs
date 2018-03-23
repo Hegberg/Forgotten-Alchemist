@@ -25,8 +25,13 @@ public class DropManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        SpawnDrop();
+        //SpawnDrop();
 	}
+
+    void FixedUpdate()
+    {
+        SpawnDrop();
+    }
 
     public void Reset()
     {

@@ -39,6 +39,19 @@ public class PlayerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*
+        Move();
+        Rotate();
+
+        if (reset_countdown)
+        {
+            ResetCountdown();
+        }
+        */
+    }
+
+    void FixedUpdate()
+    {
         Move();
         Rotate();
 

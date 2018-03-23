@@ -25,6 +25,12 @@ public class PlayerProjectileLightningScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Ignore();
+        //transform.position -= Vector3.Scale(transform.right, movement);
+    }
+
+    void FixedUpdate()
+    {
         Ignore();
         transform.position -= Vector3.Scale(transform.right, movement);
     }

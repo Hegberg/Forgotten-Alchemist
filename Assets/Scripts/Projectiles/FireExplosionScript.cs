@@ -14,8 +14,13 @@ public class FireExplosionScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        CheckTimeToFade();
+        //CheckTimeToFade();
 	}
+
+    void FixedUpdate()
+    {
+        CheckTimeToFade();
+    }
 
     void CheckTimeToFade()
     {

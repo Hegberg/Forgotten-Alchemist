@@ -35,8 +35,13 @@ public class EnemyParentScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        SpawnEnemy();
+        //SpawnEnemy();
 	}
+
+    void FixedUpdate()
+    {
+        SpawnEnemy();
+    }
 
     public void Reset()
     {

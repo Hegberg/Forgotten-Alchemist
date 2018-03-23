@@ -22,8 +22,16 @@ public class GasExplosion : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        /*
         CheckTimeToFade();
         //transform.position -= Vector3.Scale(transform.right, movement);
+        transform.localScale = new Vector3(transform.localScale[0] * growth, transform.localScale[1] * growth, transform.localScale[2]);
+        */
+    }
+
+    void FixedUpdate()
+    {
+        CheckTimeToFade();
         transform.localScale = new Vector3(transform.localScale[0] * growth, transform.localScale[1] * growth, transform.localScale[2]);
     }
 
